@@ -1,0 +1,195 @@
+@import url(default_them.css);
+@import url(preloader.css);
+@font-face {
+    font-family: 'Roboto-Medium';
+    src: url("../assets/fonts/Roboto-Medium.ttf");
+}
+body{
+  margin: 0;
+  height: 97.7vh;
+  background: white;/*url("../images/wallpaper.jpg")no-repeat center center fixed;*/ 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+.container{
+  width: 360px;
+  height: 400px;
+}
+.container:before,
+.container:after{
+   display: table;
+  content: " ";
+}
+.login-web-name{
+  color: var(--rayal-white);
+  font-family: Roboto-Medium;
+  font-size: 20PX;
+}
+.task-content {
+  min-height: 20px;
+  padding: 30px;
+  margin-bottom: 20px;
+  background-color: white;
+  border: 0px solid #e3e3e3;
+   border-radius: var(--border-radius);
+   -webkit-box-shadow:0px 0px 6px var(--rayal-white-borders);
+  -moz-box-shadow:0px 0px 6px var(--rayal-white-borders);
+ opacity: 0.7;
+filter: alpha(opacity=70);
+}
+.task-content blockquote {
+  border-color: #ddd;
+  border-color: rgba(0, 0, 0, .15);
+}
+.logo-content{
+  width: 300px;
+  margin-top: 0px;
+  height: 90px;
+  border: 0px solid blue;
+}
+.img-logo{
+  width: 70px;
+  height: 70px;
+  right: 0;
+  left: 0;
+  position: absolute;
+  margin: auto;
+  border: 0px solid blue;
+}
+.body_container{
+  height: 600px;
+  display: -webkit-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.logo-content-title{
+	width: 300px;
+	margin-top: 0px;
+	border: 0px solid blue;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.web-name{
+	color: var(--rayol-primary-color);
+    font-family: Roboto-Medium;
+    font-size: 20PX;
+}
+.input-content{
+	margin-top: 30px;
+	border: 0px solid gray;
+}
+.input-field-div{
+  width: 300px;
+  margin-top:10px;
+}
+.input-field{
+	width: 96%;
+	height: 32px;
+	border: var(--field-border-radius) solid var(--rayol-primary-color);
+	border-radius: var(--border-radius);
+	padding-left: 10px;
+
+}
+.input-field-div span{
+	font-family: Roboto-Medium;
+	size: 13px;
+    color:  var(--rayol-primary-color);
+}
+.buttons-div{
+	width: 100%;
+	height: 40px;
+	border: 0px solid gray;
+	padding-top: 10px;
+	padding-bottom: 10px; 
+
+}
+.button{
+	margin-top: 15px;
+	float: left;
+	border:  0px solid gray;
+	width: 46%;   
+}
+.button.register{
+    padding-right: 11px;
+}
+.button.login{
+	padding-left: 11px;
+}
+.btn-register{
+	width: 100%;
+	height: 35px;  
+	color: var(--rayol-primary-color);
+	background-color: var(--rayal-white);
+	border: 0;
+    border-radius: var(--border-radius);
+    -webkit-box-shadow:0px 0px 6px var(--rayal-white-borders);
+    -moz-box-shadow:0px 0px 6px var(--rayal-white-borders);
+}
+.btn-login{
+    width: 100%;
+    height: 35px;
+    border:0;
+    color: var(--rayal-white);
+    border-radius: var(--border-radius);
+    background-color: var(--rayol-primary-color);
+}
+button:hover{
+   border-radius: var(--rayol-on-horver-size);
+   -webkit-box-shadow:0px 0px 8px var(--rayol-primary-color);
+  -moz-box-shadow:0px 0px 8px var(--rayol-primary-color);
+}
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: none;
+}
+input:focus,
+select:focus,
+textarea:focus{
+  border-width: var(--field-border-radius);
+  border-color: var(--rayal-light-green-color);
+}
+@media (max-width: 420px) {
+	.container{
+		width: 100%;
+		height: 100%;
+	}
+    .button{
+    	margin-top: 10px;
+    	float: none;
+        width: 100%;
+    }
+    .button.login{
+      padding-left: 0;
+    }
+    .button.register{
+      padding-right: 0;
+    }
+    .logo-content-title{
+    	width: 100%;
+    }
+    .input-field-div{
+    	width: 100%;
+    }
+    .task-content {
+		  margin-top: 0;
+		  height: 100%;
+		  padding: 30px;
+		  margin-bottom: 0px;
+		  background-color: var(--rayal-white-sec);
+		  border: 0px solid #e3e3e3;
+		   border-radius:0;
+		 opacity: 0.8;
+		filter: alpha(opacity=80);
+		}
+}
